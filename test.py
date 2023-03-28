@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-# base_url = "https://www.play1.automationcamp.ir"
+# base_url = "https://www.play2.automationcamp.ir"
 service = Service(executable_path="C:\chromedriver")
 driver = webdriver.Chrome(service=service)
 driver.get("https://www.google.com/")
@@ -22,4 +22,5 @@ driver.find_element('name', 'q').send_keys(Keys.RETURN)
 # check2 = driver.find_element('id', 'area_notes_validate').text
 # assert check2 == "Hello world!!!"
 
-sleep(111111)
+sleep(5)
+driver.quit()
