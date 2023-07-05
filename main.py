@@ -3,8 +3,8 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 
-driver = webdriver.Chrome(executable_path="C:/chromedriver.exe")
-# driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+# driver = webdriver.Chrome(executable_path="C:/chromedriver.exe")
+driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
 
 driver.get("https://www.google.com/")
 window_title = driver.title
